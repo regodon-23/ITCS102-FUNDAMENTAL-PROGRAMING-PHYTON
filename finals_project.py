@@ -1,413 +1,251 @@
 from def_function import *
 
-print("====== FINAL PROJECT COMPILER ======\n")
+print("====== FINAL PROJECT HUB ======\n")
 
-user_profile = input("Greetings! Please enter your name --> ")
-print(f"Hello {user_profile}! Welcome to my Final Project Compiler.\n")
+student_name = input("Hello! Kindly enter your name --> ")
+print(f"Welcome {student_name}! You are now inside the Project Hub.\n")
 
-program_active = True
+system_on = True
 
-while program_active == True:
+while system_on:
 
-    print("\n================ MAIN MENU ================")
-    print("Select an option below:")
-    print("A - Activities Section")
-    print("B - Code Challenges Section")
-    print("X - Exit Program")
-    print("============================================")
+    print("\n================ HOME MENU ================")
+    print("Choose an option:")
+    print("A - Activity Module")
+    print("B - Coding Challenges")
+    print("X - Close Program")
+    print("==========================================")
 
-    main_input = input("Your choice --> ").lower()
+    main_choice = input("Your selection --> ").lower()
     print("")
 
-    # EXIT PROGRAM
-    if main_input == "x":
-        print("System shutting down... Goodbye!")
+    # EXIT SYSTEM
+    if main_choice == "x":
+        print("Closing system... See you next time!")
         break
 
-    # ACTIVITIES SECTION
-    elif main_input == "a":
-        print("===== ACTIVITIES MENU =====")
-        print("Choose from the following groups:")
+    # ACTIVITY MODULE
+    elif main_choice == "a":
+        print("===== ACTIVITY GROUPS =====")
         print("G1 - Activities 1 to 5")
         print("G2 - Activities 6 to 10")
         print("G3 - Activities 11 to 15")
         print("G4 - Activities 16 to 20")
         print("G5 - Activities 21 to 24_1")
         print("G6 - Activities 26 to 28")
-        print("Q  - Quit Activities Menu")
-        print("=============================")
+        print("Q  - Back to Main Menu")
+        print("============================")
 
-        act_group = input("Select group: ").lower()
+        group_pick = input("Select group --> ").lower()
 
         # GROUP 1
-        if act_group == "g1":
-            print("\nYou've selected Group 1 (Activities 1–5)")
-            print("Choose one activity: ")
-            print("A1 - Activity 1")
-            print("A2 - Activity 2")
-            print("A3 - Activity 3")
-            print("A4 - Activity 4")
-            print("A5 - Activity 5")
+        if group_pick == "g1":
+            print("\nGroup 1 Selected (Activities 1–5)")
+            print("G1 - Activity 01")
+            print("G2 - Activity 2")
+            print("G3 - Activity 3")
+            print("G4 - Activity 4")
+            print("G5 - Activity 5")
 
-            sub_act = input("Pick activity: ").lower()
+            act_pick = input("Choose activity --> ").lower()
 
-            if sub_act == "a1":
-                print("Launching Activity 1...")
+            if act_pick == "g1":
                 activity1()
-                continue
-
-            elif sub_act == "a2":
-                print("Launching Activity 2...")
+            elif act_pick == "g2":
                 activity2()
-                continue
-
-            elif sub_act == "a3":
-                print("Launching Activity 3...")
+            elif act_pick == "g3":
                 activity3()
-                continue
-
-            elif sub_act == "a4":
-                print("Launching Activity 4...")
+            elif act_pick == "g4":
                 activity4()
-                continue
-
-            elif sub_act == "a5":
-                print("Launching Activity 5...")
+            elif act_pick == "g5":
                 activity5()
-                continue
-
             else:
-                print("Invalid option! Returning to menu.")
-                continue
+                print("Invalid activity!")
+            continue
 
         # GROUP 2
-        elif act_group == "g2":
-            print("\nYou've selected Group 2 (Activities 6–10)")
-            print("Choose one activity: ")
-            print("A6  - Activity 6")
-            print("A7  - Activity 7")
-            print("A8  - Activity 8")
-            print("A9  - Activity 9")
-            print("A10 - Activity 10")
+        elif group_pick == "g2":
+            print("\nGroup 2 Selected (Activities 6–10)")
+            print("g6  - Activity 6")
+            print("g7  - Activity 7")
+            print("g8  - Activity 8")
+            print("g9  - Activity 9")
+            print("g10 - Activity 10")
 
-            sub_act = input("Pick activity: ").lower()
+            act_pick = input("Choose activity --> ").lower()
 
-            if sub_act == "a6":
-                print("Launching Activity 6...")
+            if act_pick == "g6":
                 activity6()
-                continue
-
-            elif sub_act == "a7":
-                print("Launching Activity 7...")
+            elif act_pick == "g7":
                 activity7()
-                continue
-
-            elif sub_act == "a8":
-                print("Launching Activity 8...")
+            elif act_pick == "g8":
                 activity8()
-                continue
-
-            elif sub_act == "a9":
-                print("Launching Activity 9...")
+            elif act_pick == "g9":
                 activity9()
-                continue
-
-            elif sub_act == "a10":
-                print("Launching Activity 10...")
+            elif act_pick == "g10":
                 activity10()
-                continue
-
             else:
-                print("Invalid option! Returning to menu.")
-                continue
+                print("Invalid activity!")
+            continue
 
         # GROUP 3
-        elif act_group == "g3":
-            print("\nYou've selected Group 3 (Activities 11–15)")
-            print("Choose one activity: ")
-            print("A11 - Activity 11")
-            print("A12 - Activity 12")
-            print("A13 - Activity 13")
-            print("A14 - Activity 14")
-            print("A15 - Activity 15")
+        elif group_pick == "g3":
+            print("\nGroup 3 Selected (Activities 11–15)")
+            print("G11 - Activity 11")
+            print("G12 - Activity 12")
+            print("G13 - Activity 13")
+            print("G14 - Activity 14")
+            print("G15 - Activity 15")
 
-            sub_act = input("Pick activity: ").lower()
+            act_pick = input("Choose activity --> ").lower()
 
-            if sub_act == "a11":
-                print("Launching Activity 11...")
+            if act_pick == "g11":
                 activity11()
-                continue
-
-            elif sub_act == "a12":
-                print("Launching Activity 12...")
+            elif act_pick == "g12":
                 activity12()
-                continue
-
-            elif sub_act == "a13":
-                print("Launching Activity 13...")
+            elif act_pick == "g13":
                 activity13()
-                continue
-
-            elif sub_act == "a14":
-                print("Launching Activity 14...")
+            elif act_pick == "g14":
                 activity14()
-                continue
-
-            elif sub_act == "a15":
-                print("Launching Activity 15...")
+            elif act_pick == "g15":
                 activity15()
-                continue
-
             else:
-                print("Invalid option! Returning to menu.")
-                continue
+                print("Invalid activity!")
+            continue
 
         # GROUP 4
-        elif act_group == "g4":
-            print("\nYou've selected Group 4 (Activities 16–20)")
-            print("Choose one activity: ")
-            print("A16 - Activity 16")
-            print("A17 - Activity 17")
-            print("A18 - Activity 18")
-            print("A19 - Activity 19")
-            print("A20 - Activity 20")
+        elif group_pick == "g4":
+            print("\nGroup 4 Selected (Activities 16–20)")
+            print("G16 - Activity 16")
+            print("G17 - Activity 17")
+            print("G18 - Activity 18")
+            print("G19 - Activity 19")
+            print("G20 - Activity 20")
 
-            sub_act = input("Pick activity: ").lower()
+            act_pick = input("Choose activity --> ").lower()
 
-            if sub_act == "a16":
-                print("Launching Activity 16...")
+            if act_pick == "g16":
                 activity16()
-                continue
-
-            elif sub_act == "a17":
-                print("Launching Activity 17...")
+            elif act_pick == "g17":
                 activity17()
-                continue
-
-            elif sub_act == "a18":
-                print("Launching Activity 18...")
+            elif act_pick == "g18":
                 activity18()
-                continue
-
-            elif sub_act == "a19":
-                print("Launching Activity 19...")
+            elif act_pick == "g19":
                 activity19()
-                continue
-
-            elif sub_act == "a20":
-                print("Launching Activity 20...")
+            elif act_pick == "g20":
                 activity20()
-                continue
-
             else:
-                print("Invalid option! Returning to menu.")
-                continue
+                print("Invalid activity!")
+            continue
 
         # GROUP 5
-        elif act_group == "g5":
-            print("\nYou've selected Group 5 (Activities 21–24_1)")
-            print("Choose one activity: ")
-            print("A21     - Activity 21")
-            print("A22     - Activity 22")
-            print("A23     - Activity 23")
-            print("A24     - Activity 24")
-            print("A24_1   - Activity 24_1")
+        elif group_pick == "g5":
+            print("\nGroup 5 Selected (Activities 21–24_1)")
+            print("G21   - Activity 21")
+            print("G22   - Activity 22")
+            print("G23   - Activity 23")
+            print("G24   - Activity 24")
+            print("G24_1 - Activity 24_1")
 
-            sub_act = input("Pick activity: ").lower()
+            act_pick = input("Choose activity --> ").lower()
 
-            if sub_act == "a21":
-                print("Launching Activity 21...")
+            if act_pick == "g21":
                 activity21()
-                continue
-
-            elif sub_act == "a22":
-                print("Launching Activity 22...")
+            elif act_pick =="g22":
                 activity22()
-                continue
-
-            elif sub_act == "a23":
-                print("Launching Activity 23...")
+            elif act_pick == "g23":
                 activity23()
-                continue
-
-            elif sub_act == "a24":
-                print("Launching Activity 24...")
+            elif act_pick == "g24":
                 activity24()
-                continue
-
-            elif sub_act == "a24_1":
-                print("Launching Activity 24_1...")
+            elif act_pick == "g24_1":
                 activity25()
-                continue
-
             else:
-                print("Invalid option! Returning to menu.")
-                continue
+                print("Invalid activity!")
+            continue
 
         # GROUP 6
-        elif act_group == "g6":
-            print("\nYou've selected Group 6 (Activities 26–28)")
-            print("Pick one activity:")
-            print("A26 - Activity 26")
-            print("A27 - Activity 27")
-            print("A28 - Activity 28")
+        elif group_pick == "g6":
+            print("\nGroup 6 Selected (Activities 26–28)")
+            print("G26 - Activity 26")
+            print("G27 - Activity 27")
+            print("G28 - Activity 28")
 
-            sub_act = input("Pick activity: ").lower()
+            act_pick = input("Choose activity --> ").lower()
 
-            if sub_act == "a26":
-                print("Launching Activity 26...")
+            if act_pick == "g26":
                 activity26()
-                continue
-            elif sub_act == "a27":
-                print("Launching Activity 27...")
+            elif act_pick == "g27":
                 activity27()
-                continue
-            elif sub_act == "a28":
-                print("Launching Activity 28...")
+            elif act_pick == "g28":
                 activity28()
-                continue
             else:
-                print("Invalid input!")
-                continue
+                print("Invalid activity!")
+            continue
 
-        elif act_group == "q":
-            print("Exiting Activities Menu...")
+        elif group_pick == "q":
+            print("Returning to Main Menu...")
             continue
 
         else:
-            print("Invalid group selection!")
+            print("Invalid group!")
             continue
 
-
-    # CODE CHALLENGES SECTION
-    elif main_input == "b":
-
-        print("===== CODE CHALLENGES MENU =====")
+    # CODING CHALLENGES
+    elif main_choice == "b":
+        print("===== CODING CHALLENGES =====")
         print("Z1 - Challenges 1 to 5")
         print("Z2 - Challenges 6 to 10")
         print("Z3 - Challenges 11 to 15")
         print("Z4 - Challenge 16")
-        print("ZQ - Quit Code Challenges")
-        print("================================")
+        print("ZQ - Back to Main Menu")
+        print("============================")
 
-        chal_group = input("Choose a group: ").lower()
+        challenge_set = input("Choose set --> ").lower()
 
-        # CHALLENGE GROUP 1
-        if chal_group == "z1":
-            print("\nYou've chosen Challenges 1 to 5")
-            print("Select:")
-            print("C1 - Challenge 1")
-            print("C2 - Challenge 2")
-            print("C3 - Challenge 3")
-            print("C4 - Challenge 4")
-            print("C5 - Challenge 5")
+        if challenge_set == "z1":
+            task_pick = input("Select C1–C5 --> ").lower()
+            if task_pick == "c1": code_challenge1()
+            elif task_pick == "c2": code_challenge2()
+            elif task_pick == "c3": code_challenge3()
+            elif task_pick == "c4": code_challenge4()
+            elif task_pick == "c5": code_challenge5()
+            else: print("Invalid challenge!")
+            continue
 
-            task = input("Pick challenge: ").lower()
+        elif challenge_set == "z2":
+            task_pick = input("Select C6–C10 --> ").lower()
+            if task_pick == "c6": code_challenge6()
+            elif task_pick == "c7": code_challenge7()
+            elif task_pick == "c8": code_challenge8()
+            elif task_pick == "c9": code_challenge9()
+            elif task_pick == "c10": code_challenge10()
+            else: print("Invalid challenge!")
+            continue
 
-            if task == "c1":
-                code_challenge1()
-                continue
-            elif task == "c2":
-                code_challenge2()
-                continue
-            elif task == "c3":
-                code_challenge3()
-                continue
-            elif task == "c4":
-                code_challenge4()
-                continue
-            elif task == "c5":
-                code_challenge5()
-                continue
-            else:
-                print("Invalid input!")
-                continue
+        elif challenge_set == "z3":
+            task_pick = input("Select C11–C15 --> ").lower()
+            if task_pick == "c11": code_challenge11()
+            elif task_pick == "c12": code_challenge12()
+            elif task_pick == "c13": code_challenge13()
+            elif task_pick == "c14": code_challenge14()
+            elif task_pick == "c15": code_challenge15()
+            else: print("Invalid challenge!")
+            continue
 
-        # CHALLENGE GROUP 2
-        elif chal_group == "z2":
-            print("\nYou've chosen Challenges 6 to 10")
-            print("Select:")
-            print("C6  - Challenge 6")
-            print("C7  - Challenge 7")
-            print("C8  - Challenge 8")
-            print("C9  - Challenge 9")
-            print("C10 - Challenge 10")
+        elif challenge_set == "z4":
+            task_pick = input("Type C16 to continue --> ").lower()
+            if task_pick == "c16": code_challenge16()
+            else: print("Invalid challenge!")
+            continue
 
-            task = input("Pick challenge: ").lower()
-
-            if task == "c6":
-                code_challenge6()
-                continue
-            elif task == "c7":
-                code_challenge7()
-                continue
-            elif task == "c8":
-                code_challenge8()
-                continue
-            elif task == "c9":
-                code_challenge9()
-                continue
-            elif task == "c10":
-                code_challenge10()
-                continue
-            else:
-                print("Invalid input!")
-                continue
-
-        # CHALLENGE GROUP 3
-        elif chal_group == "z3":
-            print("\nYou've chosen Challenges 11 to 15")
-            print("Select:")
-            print("C11 - Challenge 11")
-            print("C12 - Challenge 12")
-            print("C13 - Challenge 13")
-            print("C14 - Challenge 14")
-            print("C15 - Challenge 15")
-
-            task = input("Pick challenge: ").lower()
-
-            if task == "c11":
-                code_challenge11()
-                continue
-            elif task == "c12":
-                code_challenge12()
-                continue
-            elif task == "c13":
-                code_challenge13()
-                continue
-            elif task == "c14":
-                code_challenge14()
-                continue
-            elif task == "c15":
-                code_challenge15()
-                continue
-            else:
-                print("Invalid input!")
-                continue
-
-        # CHALLENGE GROUP 4
-        elif chal_group == "z4":
-            print("You selected Challenge 16")
-            print("To continue, type: C16")
-            task = input("Select challenge: ").lower()
-
-            if task == "c16":
-                code_challenge16()
-                continue
-            else:
-                print("Invalid input!")
-                continue
-
-        elif chal_group == "zq":
-            print("Exiting Code Challenges...")
+        elif challenge_set == "zq":
+            print("Returning to Main Menu...")
             continue
 
         else:
-            print("Invalid group selection!")
+            print("Invalid selection!")
             continue
 
-
-    # INVALID MAIN INPUT
     else:
-        print("Invalid menu choice! Please choose a valid option.")
+        print("Invalid main option!")
         continue
